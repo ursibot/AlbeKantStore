@@ -232,8 +232,7 @@ section {
     background-color: white;
     margin: auto;
     padding: 20px;
-    width: 90%;
-    max-height: 50%;
+    max-height: 60svh;
     max-width: 80%;
     overflow: auto;
 }
@@ -251,12 +250,46 @@ section {
     cursor: pointer;
 }
 
-/*@media screen {
-    .modalContent {
-        max-width: 70%;
-        max-height: 70%; 
-    }
-}*/
+/* footer */
+footer {
+    margin: auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.socials a {
+    margin: auto;
+    color: black;
+    font-size: 1.5rem;
+    padding-right: 15px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0.6;
+}
+/*.socials a:hover {
+    background: hsl(0, 0%, 96%);
+    border-radius: 50%;
+} */
+.list {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.list a {
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+}
+.list li {
+    display: inline-block;
+    margin: auto;
+    padding-right: 15px;
+}
+.copyright {
+    opacity: 0.6;
+}
+
 
 /* Payment Pages */
 .successContainer {
@@ -283,7 +316,7 @@ section {
 } */
 
 /* Make the page responsive */
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
     .navbar {
         padding: 20px 0;
     }
@@ -312,7 +345,7 @@ section {
 
     }*/
 }
-@media (max-width: 360px) {
+@media (max-width: 350px) {
     .shop {
         margin-top: 1rem !important;
     }
