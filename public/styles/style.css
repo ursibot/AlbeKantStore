@@ -56,6 +56,10 @@ section {
     justify-content: center;
     align-items: center;
 }
+#cartIcon[data-quantity="0"]::after {
+    contain: "";
+    visibility: hidden;
+}
 
 /* Cart */
 .cart {
@@ -146,13 +150,17 @@ section {
 }
 
 /* Boxes */
-.sectionPaintings {
-    font-size: 1.1rem;
+.sectionPaintings,
+.contactTitle,
+.privacyTitle {
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
     margin-bottom: 1.8rem;
 }
-.shop {
+.shop,
+.contact,
+.privacy {
     margin-top: 2rem;
 }
 .paintingsContent {
@@ -168,11 +176,11 @@ section {
 }
 .productBox:hover {
     /*background*/
-    border: 1px solid white;
+    border: 2px solid white;
     box-shadow: 0 2px 1px rgb(196, 195, 195);
-    transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/*.productBox:hover .productTitle,
+/* .productBox:hover .productTitle,
 .productBox:hover .price {
     color: whitesmoke;
 } */
@@ -198,7 +206,7 @@ section {
     cursor: pointer;
 }
 .addCart:hover {
-    background: hsl(0, 0%, 96%);
+    background: hsl(0, 1%, 86%);
     border-radius: 50%;
 }
 .informationModal {
@@ -210,7 +218,7 @@ section {
     cursor: pointer;
 }
 .informationModal:hover {
-    background: hsl(0, 0%, 96%);
+    background: hsl(0, 1%, 86%);
     border-radius: 50%;
 }
 /* Modals */
@@ -237,7 +245,7 @@ section {
     overflow: auto;
 }
 .close {
-    color: #aaaaaa;
+    color: hsl(0, 1%, 86%);
     float: right;
     margin-top: -11px;
     margin-right: -11px;
@@ -246,6 +254,7 @@ section {
 .close:hover,
 .close:focus {
     color: black;
+    transition: color 0.5s;
     text-decoration: none;
     cursor: pointer;
 }
@@ -317,6 +326,60 @@ footer {
     background: whitesmoke;
     font-size: 1.1rem;
 } */
+
+/* contactImpressum */
+.general {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.addressInformation {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    justify-content: start;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+.email {
+    font-size: 1rem;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.additionalInformation {
+    font-size: 1rem;
+}
+.addEmail {
+    position: flex;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: black;
+    cursor: pointer; 
+}
+.addEmail:hover {
+    background: hsl(0, 1%, 86%);
+    border-radius: 50%;
+}
+.additionalInformation {
+    font-size: 1rem;
+}
+
+/* privacypolicyDatenschutzerklärung */
+.privacyTitles {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+
 
 /* Make the page responsive */
 @media (max-width: 1280px) {
