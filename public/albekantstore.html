@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AlbeKantStore</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar container">
+            <a href="albekantstore.html" class="logo">AlbeKantStore</a>
+            <div class="bi bi-cart-fill" id="cartIcon" data-quantity="0"></div>
+            <div class="cart">
+                <h2 class="cartTitle">Your Cart</h2>
+                <div class="cartContent">
+                  <!--<div class="cartBox">
+                    <img src="images/paintings/1whitecube.jpg" alt="White calla lily on a square canvas in a white room" class="cartImg"/>
+                    <div class="detailBox">
+                        <div class="cartItemTitle">White Cube</div>
+                        <div class="cartPrice">$5000</div>
+                        <input 
+                          type="number"
+                          name="" 
+                          id="" 
+                          value="1" 
+                          class="cartQuantity"
+                        />
+                    </div>
+                    <i class="bi bi-trash3-fill cartRemover"></i>
+                  </div>-->
+                </div>
+                <div class="total">
+                    <div class="totalTitle">Total</div>
+                    <div class="totalPrice">$0</div>
+                </div>
+                <button type="button" class="buttonCheckout">Checkout</button>
+                <i class="bi bi-x" id="closeCart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="sectionPaintings">Paintings and Drawings</h2>
+        <div class="paintingsContent">
+            <!--Box 1-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwGIJqDj3uhcdjhabXMYCR08-XBbpFU6dHJns3FVLcbU_sIV6GyPtnj2U-cNl54tM_NovsOm9bjxaiXrcQs-1CwVDmHOZaNx8RViMwJuTCpZ6K5LPgY2B-MnTUnMp1LHaNKIfV56rW2zoWpf09cXLegnlpPGYj0TMHp_WrWLeQgryLD4J4fZ8nL5r29CE/s320/1whitecube.jpg"
+                    alt="Painting of a white calla lily in a blank white room."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>White Cube</em>, 2021. Oil on canvas, 39 3/8 x 39 3/8 inches (100 x 100 cm)</h2>
+                <span class="price">$5000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+                <!--Modal 1-->
+                <i class="bx bxs-info-circle informationModal"></i>
+                <div id="1whitecubeModal" class="modal">
+                    <div class="modalContent">
+                        <i class="bi bi-x close" id="closer"></i>
+                        <p>Contrary to the latent implication of alienation and solitude represented by the frailly upraised white calla lily in the foreground of her cubic space, Albe Kant refrains from this reading of the work. The calla lily - a symbol of elegance, grace, pure reconciliation, and above all, autarkic self-sufficiency. In contrast to the prevalent comprehension, this artwork aims to illustrate the powerful emancipation one sustains through the act of an all-encompassing fusion or synthesis as the conscious and unconscious merge into unity. Inspired by Carl Gustav Jung’s writings on archetypes and the epistemic stage theory he proposed, wherewithin one attains a holistic vision of reality. This entails the union of all autonomies, upon which space and time, real and surreal, mundane and ethereal, feminine and masculine, fuse into one. In depicting an androgynous, hermaphrodite-like calla efflorescence, the artist exemplifies the stage of „Quintessenz“, professed as the last, just as the individual acquires supplementation within themselves. Albe Kant equates this estate with the White Cube - integral dispossession of reference within an aseptic environment.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Box 2-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilvCqzFxmMmtK1nyMbfsrZ23vuzKgc6EUDIJdcFi5mSPJwECibA3rwzdLA4wlyt2qQN_sXvwvezkkr_txfg-Jz6QN5QtpG6jdspZQuarqIrkgOTAitSLFfLlPG5wLJ5eHWsDTLBHczce3Iw4eAb-vUUDftJpbiSEYklNUpclFu0BhoUtg4Jmd1kMZas6Y/s320/2thetruth2021.jpg"
+                    alt="Liberty leading the people by Eugène Delacroix in rainbow hues with a circular target panel aimed at her."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>The Truth 2021</em>, 2021. Acrylic on canvas, 65 x 77 inches (165 x 195 cm)</h2>
+                <span class="price">$17000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 3-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnXrPcm1lVMtyUIrfhfnq66Ly04zFBqnfv4c5E0L4lcs7UlnzGwyfDkoopGSDYA8mmYlABDhbOCQX0LzugrHnH3Y7WWU9nU-crxP6YWkhL88ZML3Mirf4zrPF7PC1xngGj6w5GLA_5eTBBuqy3RKNlXaLuLxB_nx2yxtVsH3cH1DUFtN-HnWrgZIoNzPI/s320/3simulacrum.jpg"
+                    alt="Blue canvas showing blue mountain landscape with orange accentuation on cliffs due to the setting sun."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Simulacrum</em>, 2023. Oil on canvas, 47 1/4 x 59 inches (120 x 150 cm)</h2>
+                <span class="price">$12000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 4-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH_hVibKE4mWNZw2LAJpHFlFBkvROKJCOZGMDCnbGlj7zBCps4H5eBA-YmSC_9CxAAfJk0QBfpra1vJvnbZyaprdKO-3x3zCWEcq1N8dSbyPgh59U3RkAeZUjxNmp-Gs9WF-w1aiKv7Laa60p-7gfCOjI2QgrJJNp5I9YQk62vvhvfOMEg4ZErksgMklM/s320/4thouwhocannotbyalbekant.jpg"
+                    alt="Two men opposed and fighting each of them carrying a donkey on their backs. Painted on a black canvas with silver paint."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Thou who cannot, by Albe Kant</em>, 2020. Acrylic on canvas, 55 1/8 x 39 3/8 inches (140 x 100 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 5-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3cZTkKfYDll7Lz1Xgx0YyR_7U4PiZNYUqLcI0OUpKHmpV0M_INRZHK4xaSxBqZUYtvmONbhgXUlGqavebBuY_iCkwoWrRlgj2e5wkJUO9MlzR2giIr4ZY4UXxwhlfIL8oBE_vLNjNmqOihnqVbliHfPjk5Q180mVbdhodFKmCYfk52YOnx2_C40SI_Ho/s320/5vigilantpredator.jpg"
+                    alt="Landscape painting showing a mountain centrally with a blue lake at the foot of the mountain. All in a cloudy atmosphere."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Vigilant Predator</em>, 2023. Oil on canvas, 55 1/8 x 78 3/4 inches (140 x 200 cm)</h2>
+                <span class="price">$15000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 6-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEfX9BXq7w4PdMf8spzU8gHKEiA7ixkI5Ks2bAko0sdXtVN0Q6ZWCxiRUSr7wcB1-uZxWEeYZFhJ6mqylqqPCwOVyNIYHx9MYHQS_A-8U9U97dwKai8zycQHJCRJ-InK94ne9tCyoZgra2CL0_4xoBLX3kVOLmcfeVmnJZ9sX1hsFqX6KvQgbyQJbKWlo/s320/6warmwinds.jpg"
+                    alt="A meadow of white flowers and dried up hay spanning over the bottom half of the landscape format painting, the upper half presents a lbright beige sky."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Warm Winds</em>, 2022. Oil on canvas, 47 1/4 x 71 inches (120 x 180 cm)</h2>
+                <span class="price">$12000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 7-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCbvvM69VDXVkGIQ-oISPiQ4k7zcGEcXya6p92p4kLxTepllXTjMezj_SY7z0kJRMf2c8CdSUfuvr0vDZZT-k2_HpfyNq4Dr1Bp2XzklaUkqnYX58LkzQfGe9uySLhcVIPajAJ5S36XsjZ_V_UhuBe9-Z3Tu93_slhEq1xN704jcfvFgv5l3F7bXHAMuk/s320/7breath.jpg"
+                    alt="A male headless torso uncovering his chest and lifting his shirt with disproportionately large hands on paper that fades from burgundy to turquoise blue in color."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Breath</em>, 2023. Acrylic on paper, 41 x 29 1/2 inches (105 x 75 cm)</h2>
+                <span class="price">$3000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 8-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTMw4EnPU0zIUFoSE0XTAA9l4q6_zKUH0OO3as7RadBMoGaG-bBDImgO9EOvJhR3w8SXBKt23dIVZba0y36yYS8VbPN0AZzViCpM-htIAhcNa6cyuqh4HSJNP9bM2DMQjMm4S1557SFgMKN5oMI6H83R4TQY3YuX0slq65tisr8qR68IJDqFCi52tdtnc/s320/8awhitemeadowplayedinmydream.jpg"
+                    alt="A grey natural stone covered in deep black cracks and greenery that has grown into the crevices. The painting resembles a meadow."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>A White Meadow Played in My Dream</em>, 2006. Oil on canvas, 39 3/8 x 55 1/8 inches (100 x 140 cm)</h2>
+                <span class="price">$7500</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 9-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLxUua6PVEQ2zPULfN-9R2gizbOuOcUwEEdwjm5WXhpVaJ9r7J_ThsN5f8rgUZuetmCG1j3DyZiQobsXyTDs7YzyA71nad1KzboTaorRYEVxX_xPPCYpI5uy0dwLEIYYXGY-GD4YQFiNrkP9EebWtUkv0AUXF9rjqoEDRLcLLbCdGBecKWM2hhUJ9OMfw/s320/9inception.jpg"
+                    alt="Unprimed brown-beige canvas displaying a mountain ridge that is reflected in a lake at the foot of the nearest mountain. The scenery is foggy as it is still early in the morning in the alps."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Inception</em>, 2023. Oil on canvas, 55 1/8 x 78 3/4 inches (140 x 200 cm)</h2>
+                <span class="price">$15000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            <!--Box 10-->
+            </div>
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjltFO44Qfuvej9Xrz_0Q5cGTxZKf34TA0Bjuq4He-t78yKKNqIBIwnsbGzAehGwm0nYv6ElcvGU07cebI7MvJW-lKKRFPldNSw9qqvK-w10rWgoUy5-fWHwNd3cgme3Pay_7tNqy8rnkLQ3OuxqNU1yT-XUw1dOQMPrZhc8I8EBwZXFuFIs-V8PocDs9s/s320/10gameover.jpg"
+                    alt="Entirely black canvas that appears to show a square room with black and green-turquoise checkerboards as walls. At the end of the room stand a blacked out TV. The screen reads game over."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Game Over</em>, 2020. Acrylic on canvas, 59 1/16 x 51 3/16 inches (150 x 130 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 11-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx0OtNC0odFQZzNbUsWNVgLHIu9VtimSaVfyim7uNVeKUpLl1gdqcFC8ymWuqoNDvn4NKN3_FelOeB4EZ4LQAkn9s-obSMS2cfy8IWHOX6cBh8O5c090Zuqo9sEzSZMletH-vLtoATCl2eGsCbfYH4Qgbdm9vXJp4tUKgBbJvLjUuip7fXmuS0iqgKx9M/s320/11gymclass.jpg"
+                    alt="Two diptych panels showing sheer human silhouettes participating in a gym class in front of a viewership that surrounds the participants. The scene imitates a talk show. The left square panel depicts sheer silouhettes of a gun pointing at a crying woman whose figure partly covers the gymnasts. "
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Gym Class</em>, 2015. Oil on canvas, diptych, overall: 38 1/2 x 119 inches (overall: 98 x 302 cm)</h2>
+                <span class="price">$16000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 12-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI4ZL5OqV2OCBQES95x5vRYXbHL6QV6mBQvkNjTjzdgUni_U5_xpVCILxk04f1JWDhrFfpBKK1ui4nROFNpEPHW588yEFOT-XheX8FKs0EglSPqKnTiF7rBGbBE-ufTB9KaPun9UqLGqp_nJjs4jbjP9_hrj59kNwnXk5jZFlPVqiY89agDhdICdlCTUI/s320/12freedom.jpg"
+                    alt="Dark bottom half of the painting clearly shows a birch forest in dark brown hues. The tree trunks seem to disolve as the spots on the tree bark turn into silhouettes of birds ascending in the direction of the sky."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Freedom</em>, 2019. Acrylic on canvas, 75 x 73 inches (190 x 185 cm)</h2>
+                <span class="price">$16000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 13-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio1bGkU5bspD1mNP4NBoBUunYd9RNnjViDaE9hJLb2k0MxCFD77Q4jK-3idBhYF8EYVaZmz02w2nNt__b_LNDz2d_u-sqZp-az2mnlWUfTiTmuKJMXSO8sm7YSK5aiU1TbxRR_PRkEhXciNmq2Hy9b3TOPVrXG7ygCW94afSn9rn4zjjlNMwq5xK-xTg4/s320/13atinyloveI.jpg"
+                    alt="Beige paper covered in grey paint in an expressionist manner. Drawing on top shows a man and a woman having intercourse. The female's body is displayed from the back. The couple is kissing each other. The man's face is portrayed in a profile view."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Tiny Love I</em>, 2014. Mixed media on paper (acrylic, graphite), 51 3/16 x 42 inches (130 x 106 cm)</h2>
+                <span class="price">$4000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 14-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGKF7KlSWszqanQRgwEiJ4PI22-fV6dELIhpkxr3KMo-J9ZnHeTiuGENhSiEujayJ4anvcDYvLcKiAzM8R3Chony2unyGRozH-UshsfA-9WLKS06b0GuxSt47dtVQV6oQrwAXzF0SPYKLC2sLSjhaHhzG7eLcmqYLI8yC9VDhN31AQXmQJ3G8XSN0_wpE/s320/14thepath.jpg"
+                    alt="Abstract painting of a landscape, no figurative elements seen just fading colors of green, yellow, white, and brown"
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>The Path</em>, 2019. Oil on canvas, 20 x 28 x 3 inches (50 x 70 x 7,5 cm)</h2>
+                <span class="price">$4000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 15-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIngb7vR6tohRjFtffAZkSa-Iy3SDfHznz_IzMw7aiWAj0XzHu6pqHgvysXIuPFzzgyifBcSVRuSFsA_70QgaxeYWkwbu0A7-3Y3fTKwdGkkp8VCb9e3QuLR5cqGS-cl9-CAN8_g5SzS6z3kmUK-8ZcNpiB0JvIZGcQ0Y3UUlBsb-8pS1IkfiiuSPbv3c/s320/15togetherapart.jpg"
+                    alt="A diptych showing a mirrored landscape with trees stretching out into the far. The foreground consists of a lake that shows the reflection of two predominant trees and the landscape in the background."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Together, Apart</em>, 2018. Oil on canvas, diptych, overall: 59 x 39 3/8 inches (overall: 150 x 100 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 16-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKNIRkrIaowLcs922srGg6gTY1QlraaV1YvHhG0jrBdolqXuPt-M7qw_owwAu7ljt4lYl8DRnXSUAhxeB6fHYqHWbH8xfXWM7JNJMkasQBJbZEgtDmxnuog1B3jwKo0WM_xk6mIKMYwj-zReZSm-G8B7FdRQ5jyyX5qdteb9cy5KYCx8__253Jkuqg8e8/s320/16interplay.jpg"
+                    alt="A landscape showing the swiss alps. The foreground is taken up by grey mountains that transform into a blue mountain chain that can also represent the sky. The center shows a glacier."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Interplay</em>, 2023. Oil on Canvas, 39 3/8 x 55 1/8 inches (100 x 140 cm), Oil on Canvas</h2>
+                <span class="price">$12000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 17-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqW6r5GaK2yG9gzVOMTAdvhnD7e3f0AU7B7O2NRSxcykdtOTjdpIV5Yqh-Ce9JE3MAmapNqfHPoZc9jY6jpfiHYgCWBEyzbUaedAa2lhSomfNNHsgBx5d1VloN9Wtok_1wcjbG0Lh5Rtv4TmST8HDZJnH60d3h6k8GnT6-c-wUytjA0Yam8LxgeZXSKgw/s320/17blackcube.jpg"
+                    alt="Square black canvas depicting a mountain that has been painted using black paint, only its peak is slightly implied through the usage of grey paint. "
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Black Cube</em>, 2023. Acrylic on canvas, 39 3/8 x 39 3/8 inches (100 x 100 cm)</h2>
+                <span class="price">$6000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 18-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIs8C0Jjw_4kuSKJ8auveaf2qLBuzLjy35NCik1akGyHoaH-3vPglUh33fC6em09hm_vQ4I1bFJ-KSfYphFyOY6X9m6UIY0ly7DyW6OHvwzQaPB3d9CdOMTnvmWCXJRkwgJUGNYkWtFMLP-w8rJKeIMn7QrG6vehXES901r9m0qJK--RNhxrAUr6FRj1Q/s320/18pink.jpg"
+                    alt="Entirely pink square canvas that centrally depicts a glass vase that golds pink roses, their green leaves and flower head turned downward as they are starting to wilt."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Pink</em>, 2023. Oil and acrylic on canvas, 47 x 47 inches (121 x 121 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 19-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzJ0hwqhB65KJsYlsnFUcZM5XK6qIUZdouN4GhMM4Na8MM-4iwlirSJUZ-09W-_2IpswNOdRmXikgfMJGGWNdpDrmPZf-oz213VcfdehMJK-V_B7tlCnUHh6pY5Mq9ZWB4ZPqDtUEIJagzkbCOzXADygcZ-gQjQRgLSUSEkxfRRszfZ2eQ8VN_OYOiKEY/s320/19symbioticelements.jpg"
+                    alt="A foggy and entirely light blue and grey landscape showing Lake Lucerne in the foreground. Above the horizon, through clouds and sunrays, the viewer is directed to a mountain chain. Sheer, almost invisible, shadows of leaves cover parts of the lake."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Symbiotic Elements</em>, 2017. Oil on canvas, 55 1/8 x 78 inches (140 x 200 cm)</h2>
+                <span class="price">$17000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 20-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhU0Lositxr2KfrN-y34AJ0RS9KNm8ThrYE3FeCfq3K7FrlgXpTfuuwmc8DQpLNPVsyyKzdpfHzVoIvneZgat-UO5E9KHn08J1dUWti5YIu4Qd-BGS9RdST4cOXGUHiogK852OqqZ0aBrzdaUGOVs_2yEn7Esi__gLqrb3D0af9ykGvd6QGrR55CmyEzyI/s320/20braveoldworld.jpg"
+                    alt="A muscular male, headless torso whose back is facing the viewer, his arm is unnaturally positioned behind him, his hand and forearm take up the foreground. He has a tattoo on the biceps that reads nuda veritas."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Brave Old World</em>, 2022. Oil on canvas, 39 3/8 x 61 inches (100 x 155 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 21-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU3abb-e0ANnA5Zs-F5y39JiesQ80XURj6QhiX5iBQf7D2ruoU46kn19-_loVvHBCc_Lxz9MOyPYHEqRetmNgZ1QUBoWIwLRW_MuCbpXHU9q8Qlj1jHjRQcU8lzZL2VcJcC8wXYiNnx4Lez5l34cpBU84b7fjt0QY6ONVAlDyxlFahHczRCi58mUwmHkw/s320/21thewomanwholefttheshadows.jpg"
+                    alt="A fully linear drawing of an iris flower and woman chimera. Her body and head are made of iris petals. Her entire figure represents one blooming iris."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>The Woman Who Left the Shadows</em>, 2019. Ink on paper, 15 3/4 x 11 13/16 inches (40 x 30 cm)</h2>
+                <span class="price">$2000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 22-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcBNdrqtTQJoJ5KWIbqqfajSFAuzNuFG8jrtjr0s3MaXY4J9mt5xve1qd6b4RebVZkXWYvKABMDCW91UdS1wKm-pNuEMWMEmM97XfDxW2mZLJgR7RPvdPIwfOD0rhpcQOBTaDmyO5SOF6iteghFSr9wx1EX0erJYzURFg_uTSxhjPIb4TS1iCWVl3tDT4/s320/22thebattle.jpg"
+                    alt="Two white male figures facing each other in front of a dark grey background with a light grey frame. Both are standing, their heads turned downward, one foot placed forward. Their figures are at once seperated, by a light grey stripe, as well as connected through thin white lines. Behind the male on the left his shadow that is turned in the opposite direction seems to leave the scene."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>The Battle</em>, 2013. Acrylic on canvas, 58 1/2 x 47 inches (149 x 119 cm)</h2>
+                <span class="price">$10000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 23-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcBCkU_z-FBA_wRch0k9SEOBb1UZPazfFkbKVqkzGdKIj686Oe7vuWwJlKFC9vLBErQqIBlZzj_-5-e6zh_UjtaLn1v8zsYOKXukCIL0LXrLBpsRYRh7my4OjGoV21ji8U7ONFmKofhqpg1WVclyKYlW6s1xp43X0-8axxrbKf8_YvTh_ZHFZlwfzC4jo/s320/23z%C3%BCrich.jpg"
+                    alt="A male figure with a wolves head with his pointer finger warningly put forward makes up the foreground of the painting. He is surrounded by various gold and black ornamental elements and frames, similar to stained glass windows. Behind him the Grossmünster, Zürich's landmark church, and the city are implied. The painting was made on paper which fades from a dark seagreen on the bottomm to a lighter mint green top."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Zürich</em>, 2023. Acrylic on paper, 41 x 29 1/2 inches (104 x 75 cm)</h2>
+                <span class="price">$3000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 24-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx_w_z6CsZ8R9tM-SnGvowLQk8CJpWFmaCEziJTkMuopF5nEm9CoRZADlho5QyI7pZuJRbKhjOdgFS7CyOHG3m34tpxrz5VEhF0B3XfywU1pFAAaefOmRjutqAXgD15KzegATSa4nvortEMGxaQ2jWwsIbK2u_n93hzoPjAoLyNwfDkba64mfC9Dav08k/s320/24tinyloveII.jpg"
+                    alt="Beige paper in landscape format showing large iris flowers that are lightly colored in shades of green an purple. Behind the petals and leaves a lying couple having intercourse is insinuated but not visible."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Tiny Love II</em>, 2015. Mixed media on paper, 41 x 57 inches (106 x 146 cm)</h2>
+                <span class="price">$5000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 25-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQQ6pheuPvUREsYOhWZp47K8Kwl7jTc2CCcQyw9yvbSS1DWxcarTAkX6ipyQibXnmYV_BW6yJz03xBvHFV0vMDoH2ipTPLKIl1nRucp6-ztkHoN-lK77rjZUtpeffWNErLB_pddSbq562n1hf7AuDeCpFaR_wGOXsg4MglJItRdoqv0eTHdJGng6g0OP0/s320/25thefourapocalyptichorses.jpg"
+                    alt="Beige paper in a square format showing a group of four raging horses emerging from a dark grey background."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>The Four Apocalyptic Horses</em>, 2014. Acrylic on paper, 59 x 53 inches (150 x 160 cm)</h2>
+                <span class="price">$6000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 26-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4MyZp-BZ_xXGQ1bpARxAfX10IBMQa3Hwt3196K44tenzTqiC1ni4h-Y8UW7JQq57dVHBmWISiFfxZEQZRgEEFbhqhEMvEfGrqnwi-r_B3dDE_JV4RPcoaxfFm2GwWiXrPpwReb4hy3z2dCdYnvaBP3sqd_TiTcXzvD4nvxX8b0uoIHBEZsx1wjycrw4M/s3762/ONA.jpg"
+                    alt="White cream paper showing a chimera women-iris calla figure. It's back is turned toward the viewer presenting the recipient with a silhoutte made out ouf a life-size flover petal."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>SHE</em>, 2023. Mixed media (oil, acrylic and pencil), 53 x 35 inches (135 x 90 cm)</h2>
+                <span class="price">$7000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            <!--Box 27-->
+            <div class="productBox">
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilvCqzFxmMmtK1nyMbfsrZ23vuzKgc6EUDIJdcFi5mSPJwECibA3rwzdLA4wlyt2qQN_sXvwvezkkr_txfg-Jz6QN5QtpG6jdspZQuarqIrkgOTAitSLFfLlPG5wLJ5eHWsDTLBHczce3Iw4eAb-vUUDftJpbiSEYklNUpclFu0BhoUtg4Jmd1kMZas6Y/s320/2thetruth2021.jpg"
+                    alt="The vieweris confronted with an entirely grey landscape representing the Swiss Alps. The forground, which is made up of a cloudy mass and is more faded and indistinguishable, leads into the background with more distinct mountain ridges. A particularily strong contrast appears at the lop left of the painting where a larger mountaintop emerges from the shadows."
+                    class="productImg"
+                />
+                <h2 class="productTitle"><em>Greetings from Switzerland</em>, 2023. Oil on canvas, x inches ( cm)</h2>
+                <span class="price">$7000</span>
+                <i class="bi bi-bag-heart-fill addCart"></i>
+            </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/albekant" target="_blank" title="MyInstagram"><i class="bi bi-instagram instagramIcon"></i></a>
+            <a href="https://www.facebook.com/albe.kant" target="_blank" title="MyFacebook"><i class="bi bi-facebook facebookIcon"></i></a>
+            <a href="https://www.linkedin.com/in/monika-jurkiewicz-a0915084" target="_blank" title="MyLinkedIn"><i class="bi bi-linkedin inkedinIcon"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="privacypolicyDatenschutzerklaerung.html">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="termsandconditionsAGB.html">Terms and Conditions</a>
+            </li>
+            <li>
+                <a href="contactImpressum.html">Contact</a>
+            </li>
+        </ul>
+        <div class="copyright">
+            <p>&copy; Albe Kant 2023</p>
+        </div>
+    </footer>
+	<script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>
