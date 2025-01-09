@@ -377,6 +377,11 @@ footer {
     margin-right: 0;
     font-weight: bold;
 }
+.privacyContent {
+    display: grid;
+   /*  grid-template-columns: repeat(auto-fit, minmax(220px, auto)); */
+    gap: 1.5rem;
+}
 
 
 
